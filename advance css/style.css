@@ -1,0 +1,40 @@
+section {
+    margin: 100px;
+}
+
+div {
+    width: 200px;
+    height: 50px;
+    background-color: #7ea874;
+    border: 2px solid black;
+    margin: 10px auto;
+    text-align: center;
+    border-radius: 33%;
+    box-shadow: 5px 5px 15px black;
+    transition: 5s;
+}
+
+div:nth-of-type(2n) {
+    background-color: #f7db6a;
+}
+
+div:nth-of-type(3n) {
+    background-color: #ebb02d;
+}
+
+#one:hover {
+    transform: rotate(3600deg);
+}
+#two:hover {
+    transform: scale(2);
+}
+#three:hover {
+    transform: translateX(200px);
+}
+#four:hover {
+    transform: skew(90deg);
+}
+
+#five:hover {
+    transform: rotate(-3600deg) scale(2) translateX(100px);
+}
