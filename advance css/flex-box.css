@@ -1,0 +1,33 @@
+#container {
+    height: 500px;
+    width: 80%;
+    margin: 10px auto;
+    background-color: aquamarine;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    align-content: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+#blue {
+    flex: 2 2 100px;
+}
+
+#orange {
+   flex: 1 2 100px;
+}
+
+#container div {
+    height: 100px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+}
