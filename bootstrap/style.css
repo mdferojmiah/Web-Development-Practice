@@ -1,0 +1,21 @@
+h2 {
+    color: #198754;
+}
+
+.container {
+    background-color: rgba(250, 235, 215, 0.389);
+    height: 100vh;
+}
+
+.btn-pink {
+    background-color: pink;
+}
+.btn-pink:hover {
+    background-color: blueviolet;
+}
+h1 {
+    display: inline-block;
+}
+.notify {
+    margin-right: 25px;
+}

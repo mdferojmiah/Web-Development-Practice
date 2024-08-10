@@ -1,0 +1,30 @@
+.card {
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    color: white;
+    font-family: Madimi one;
+    font-size: 50px;
+}
+
+.one {
+    background-color: blueviolet;
+    position: relative;
+    z-index: 1;
+}
+.two{
+    background-color: orange;
+    position: relative;
+    bottom: 20px;
+    z-index: 3;
+}
+.three {
+    background-color: limegreen;
+}
+h1 {
+    font-family: Madimi one;
+}
+
+span {
+    color: blueviolet;
+}
