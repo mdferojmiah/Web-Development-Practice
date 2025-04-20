@@ -1,0 +1,21 @@
+@model List<FoodApp.Models.Dish>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1 class="text-center">Menu</h1>
+
+<div class="container">
+    <div class="row mx-auto">
+        @foreach(var item in Model){
+            <div class="card col-3 text-center" style="width: 18rem; margin: auto;">
+                <img src="@item.ImageUrl" class="card-img-top mt-3" alt="Food Image" style="height: 70%;"/>
+                <div class="card-body">
+                    <h5 class="card-title">@item.Name</h5>
+                    <p class="card-text"><b>@item.Price $</b></p>
+                    <a asp-asp-controller="Menu" asp-action="Details" asp-route-id="@item.Id" class="btn btn-info">Detials</a>
+                </div>
+            </div>
+        }
+    </div>
+</div>
