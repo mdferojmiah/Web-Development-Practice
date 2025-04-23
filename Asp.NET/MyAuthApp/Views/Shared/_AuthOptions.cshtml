@@ -1,0 +1,21 @@
+﻿@using System.Security.Claims
+
+@if(User.Identity?.IsAuthenticated == true){
+	<form asp-controller="Account" asp-action="Logout" method="post" id="logoutForm" class="navbar-right">
+		<ul class="nav navbar-nav navbar-right flex-grow-1">
+			<li class="nav-item">
+				hello, @User.FindFirst(ClaimTypes.Email)?.Value!  
+			</li>
+			<li class="nav-item">
+				<button type="submit" class="nav navbar-nav navbar-link">Log Out</button>
+			</li>
+		</ul>
+	</form>
+}
+else
+{
+	<ul class="nav navbar-nav navbar-right">
+		<li><a class="nav-link text-dark" asp-controller="Account" asp-action="Login">Login</a></li>
+		<li><a class="nav-link text-dark" asp-controller="Account" asp-action="Register">Register</a></li>
+	</ul>
+}
